@@ -12,9 +12,10 @@ import { navItems } from '@/constants';
 
 interface MobileNavProps {
   isOpen: boolean;
+  onClose: () => void;
 }
 
-export const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
+export const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
   const router = useRouter();
   const pathname = usePathname();
   const [height, setHeight] = useState("auto");
@@ -24,6 +25,12 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
       setHeight(`${window.innerHeight - 65}px`);
     }
   }, []);
+
+  const handleLinkClick = (href: string) => {
+    router.push(href);
+    onClose(); // Close the menu when a link is clicked
+  };
+
 
   const containerVariants = {
     closed: {
@@ -79,13 +86,13 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
         >
           <motion.ul
             variants={listVariants}
-            className="flex flex-col justify-start items-start gap-y-8 w-full max-w-[328px] mx-auto mt-20 mb-8"
+            className="flex flex-col justify-center sm:justify-start items-center sm:items-start gap-y-8 w-full max-w-[328px] mx-auto mt-20 mb-8"
           >
             {navItems.map((item) => {
               if (item.id <= 4) {
                 return (
                   <motion.li key={item.id} variants={itemVariants}>
-                    <Link className="text-[16px] leading-[24px] text-colorTitle font-goggleSans font-medium" href={item.src!}>
+                    <Link onClick={() => handleLinkClick(item.src!)} className="text-[16px] leading-[24px] text-colorTitle font-goggleSans font-medium" href={item.src!}>
                       {item.title}
                     </Link>
                   </motion.li>
@@ -95,16 +102,19 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen }) => {
                 <motion.span
                   key={item.id}
                   variants={itemVariants}
-                  className="flex flex-col justify-start items-start gap-y-4"
+                  className="flex flex-col justify-center sm:justify-start items-center sm:items-start gap-y-4"
                 >
                   <Button
-                    onClick={() => router.push("/sign-in")}
+                    onClick={() => {
+                      router.push("/sign-in");
+                      onClose();
+                    }}
                     className={cn(`justify-center gap-x-2 items-center md:hidden uppercase`, pathname === "/selling-page" ? "hidden" : "flex")}
                   >
                     <Person />
                     Log in
                   </Button>
-                  <LinkHref className="text-[16px] leading-[24px] text-colorTitle font-goggleSans font-medium no-underline" href="mailto:support@academy.io">
+                  <LinkHref onClick={onClose} className="text-[16px] leading-[24px] text-colorTitle font-goggleSans font-medium no-underline" href="mailto:support@academy.io">
                     {item.title}
                   </LinkHref>
                 </motion.span>

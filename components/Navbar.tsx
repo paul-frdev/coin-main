@@ -22,6 +22,9 @@ export const Navbar = () => {
   const route = useRouter();
   const pathname = usePathname();
 
+  const toggleMobileNav = () => setIsOpenMobileNav(prev => !prev);
+  const closeMobileNav = () => setIsOpenMobileNav(false);
+
   const isLogPath = ['/sign-in', '/quiz', '/checkout-results', '/enter-email', '/selling-page', '/selling-page/discount'].includes(pathname)
 
   return (
@@ -67,12 +70,12 @@ export const Navbar = () => {
           >
             <QuestionMark />
           </Button>
-          <Button onClick={() => setIsOpenMobileNav(prev => !prev)} variant="buttonPrimaryOrangeDestructive">
+          <Button onClick={toggleMobileNav} variant="buttonPrimaryOrangeDestructive">
             {isOpenMobileNav ? <Close /> : <Menu />}
           </Button>
         </motion.div>
       </Container>
-      <MobileNav isOpen={isOpenMobileNav} />
+      <MobileNav onClose={closeMobileNav} isOpen={isOpenMobileNav} />
     </motion.div>
   );
 };
