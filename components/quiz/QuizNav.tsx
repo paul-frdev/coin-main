@@ -20,11 +20,11 @@ export const QuizNav: React.FC<QuizNavProps> = ({ index, countPoints, secondPoin
         <Button
           onClick={prevQuestion}
           disabled={disabled}
-          className="max-w-[78px] h-[42px] text-darkGray p-1 text-sm uppercase flex justify-between gap-x-2 items-start border-none hover:bg-transparent hover:text-darkGray rounded-md"
+          className="max-w-[78px] hover:bg-transparent h-[42px] p-1 text-sm uppercase flex justify-between gap-x-2 items-center border-none rounded-md transition-colors duration-300 ease-in-out group"
           variant="buttonPrimaryBlueDestructive"
         >
-          <ArrowBackward />
-          Back
+          <ArrowBackward className="text-darkGray group-hover:text-count transition-colors duration-300 ease-in-out" />
+          <span className="text-darkGray group-hover:text-count transition-colors duration-300 ease-in-out">Back</span>
         </Button>
       </div>
       <div className="flex justify-center gap-x-4 w-full max-w-[792px] row-start-2 md:row-start-1 col-start-1 col-end-6 md:col-start-2 md:col-end-4">
