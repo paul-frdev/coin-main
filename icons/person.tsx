@@ -1,0 +1,16 @@
+import React from "react";
+
+interface PersonProps {
+  className?: string;
+}
+export const Person = ({ className, ...props }: PersonProps) => {
+  return (
+    <svg className={className} {...props} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="7" r="5" fill="#ffffff" style={{ opacity: 0.5 }} />
+      <path
+        d="M3 19V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V19C21 16.2386 18.7614 14 16 14H8C5.23858 14 3 16.2386 3 19Z"
+        fill="#fff"
+      />
+    </svg>
+  );
+};
