@@ -2,10 +2,10 @@
 
 import startquizImage from "../../public/images/startquiz.png";
 import { Button } from "../ui/Button";
-import { Container } from "../ui/container";
+import { Container } from "../ui/Container";
 import { LinkHref } from "../ui/LinkHref";
-import { Subtitle } from "../ui/subtitle";
-import { Typography } from "../ui/typography";
+import { Subtitle } from "../ui/Subtitle";
+import { Typography } from "../ui/Typography";
 import { fadeIn, imageZoom, staggerTextContainer } from "@/constants/variants";
 import { motion } from "framer-motion";
 import Image from "next/image";

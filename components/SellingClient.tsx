@@ -4,7 +4,7 @@ import { GetAcademy } from "./landing/GetAcademy";
 import { ProfileResults } from "./landing/ProfileResults";
 import { Testimonials } from "./landing/Testimonials";
 import { TryAcademy } from "./landing/TryAcademy";
-import { Container } from "./ui/container";
+import { Container } from "./ui/Container";
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 

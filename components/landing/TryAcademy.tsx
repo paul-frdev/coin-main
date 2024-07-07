@@ -1,7 +1,7 @@
 "use client";
 
-import { Title } from "../ui/title";
-import { Typography } from "../ui/typography";
+import { Title } from "../ui/Title";
+import { Typography } from "../ui/Typography";
 import { DiscountCart } from "./DiscountCart";
 import { MoneyBack } from "./MoneyBack";
 import { SalesCart } from "./SalesCart";

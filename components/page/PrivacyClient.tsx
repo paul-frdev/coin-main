@@ -1,9 +1,9 @@
 'use client'
 
 import React from 'react';
-import { Container } from '../ui/container'
-import { Title } from '../ui/title'
-import { Typography } from '../ui/typography'
+import { Container } from '../ui/Container'
+import { Title } from '../ui/Title'
+import { Typography } from '../ui/Typography'
 import { motion } from "framer-motion";
 
 export const PrivacyClient = () => {

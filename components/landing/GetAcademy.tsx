@@ -1,6 +1,6 @@
 "use client";
 
-import { Title } from "../ui/title";
+import { Title } from "../ui/Title";
 import { SalesCart } from "./SalesCart";
 import { LeftImageAnim, fadeIn, fadeInLeft, fadeInRight, fadeInUp, rightImageAnim, staggerContainer } from "@/constants/variants";
 import { motion } from "framer-motion";

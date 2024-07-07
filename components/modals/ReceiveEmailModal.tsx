@@ -3,7 +3,7 @@
 import { Button } from "../ui/Button";
 import { LinkHref } from "../ui/LinkHref";
 import { Modal } from "../ui/Modal";
-import { Typography } from "../ui/typography";
+import { Typography } from "../ui/Typography";
 import ReceiveEmailImage from "/public/images/receive-email.png";
 import useReceiveEmailModal from "@/hooks/useReceiveEmailModal";
 import Image from "next/image";

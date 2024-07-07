@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { Button } from '../ui/Button';
-import { Title } from '../ui/title';
+import { Title } from '../ui/Title';
 
 interface MessageCartProps {
   message: ShowMessage;

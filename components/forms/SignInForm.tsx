@@ -4,7 +4,7 @@ import { Button } from "../ui/Button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../ui/Form";
 import { Input } from "../ui/Input";
 import { LinkHref } from "../ui/LinkHref";
-import { Title } from "../ui/title";
+import { Title } from "../ui/Title";
 import { fadeIn, openSection } from "@/constants/variants";
 import { Eye } from "@/icons/eye";
 import { EyeClose } from "@/icons/eyeClose";

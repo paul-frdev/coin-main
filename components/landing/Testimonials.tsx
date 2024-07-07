@@ -1,8 +1,8 @@
 "use client";
 
 import { ReviewCart } from "../ReviewCart";
-import { Title } from "../ui/title";
-import { Typography } from "../ui/typography";
+import { Title } from "../ui/Title";
+import { Typography } from "../ui/Typography";
 import { DiscountCart } from "./DiscountCart";
 import { reviews } from "@/constants";
 import { fadeInDown, fadeInUp, staggerContainer } from "@/constants/variants";

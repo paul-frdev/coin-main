@@ -1,7 +1,7 @@
 "use client";
 
 import { DiscountCart } from "./landing/DiscountCart";
-import { Title } from "./ui/title";
+import { Title } from "./ui/Title";
 import saleImage from "/public/images/sale.png";
 import { fadeInRight, staggerBlockContainer } from "@/constants/variants";
 import { motion } from "framer-motion";

@@ -2,8 +2,8 @@
 
 import { Button } from "../ui/Button";
 import { LinkHref } from "../ui/LinkHref";
-import { Title } from "../ui/title";
-import { Typography } from "../ui/typography";
+import { Title } from "../ui/Title";
+import { Typography } from "../ui/Typography";
 import { SalesCart } from "./SalesCart";
 import { SalesWidget } from "./SalesWidget";
 import guarenteeImage from "/public/images/guarentee.png";

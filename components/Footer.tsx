@@ -1,8 +1,8 @@
 "use client";
 
-import { Container } from "./ui/container";
+import { Container } from "./ui/Container";
 import { LinkHref } from "./ui/LinkHref";
-import { Typography } from "./ui/typography";
+import { Typography } from "./ui/Typography";
 import { fadeInLeft, fadeInRight, staggerTextContainer } from "@/constants/variants";
 import { motion } from "framer-motion";
 import React from "react";

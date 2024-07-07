@@ -1,8 +1,8 @@
 "use client";
 
 import { LinkHref } from "../ui/LinkHref";
-import { Title } from "../ui/title";
-import { Typography } from "../ui/typography";
+import { Title } from "../ui/Title";
+import { Typography } from "../ui/Typography";
 import { SalesCart } from "./SalesCart";
 import backMoneyImage from "/public/images/back-money.png";
 import { LeftImageAnim, fadeInLeft, staggerTextContainer } from "@/constants/variants";

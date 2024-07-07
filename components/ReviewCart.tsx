@@ -2,7 +2,7 @@
 
 import { SalesCart } from "./landing/SalesCart";
 import { StarRating } from "./StarRating";
-import { Typography } from "./ui/typography";
+import { Typography } from "./ui/Typography";
 import { fadeInLeft, fadeInRight, fadeInUp } from "@/constants/variants";
 import { Review } from "@/types";
 import { motion } from "framer-motion";

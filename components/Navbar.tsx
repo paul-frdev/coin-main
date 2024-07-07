@@ -3,7 +3,7 @@
 import { SalesPanel } from "./landing/SalesPanel";
 import { MobileNav } from "./MobileNav";
 import { Button } from "./ui/Button";
-import { Container } from "./ui/container";
+import { Container } from "./ui/Container";
 import { fadeIn, staggerTextContainer } from "@/constants/variants";
 import { Close } from "@/icons/close";
 import { Menu } from "@/icons/menu";
